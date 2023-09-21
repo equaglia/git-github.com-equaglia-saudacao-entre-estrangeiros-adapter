@@ -1,6 +1,6 @@
-import target.Brasil;
 import adapter.AmericanoAdapter;
 import adapter.JaponesAdapter;
+import targetAdapter.Brasil;
 import adaptee.Americano;
 import adaptee.Brasileiro;
 import adaptee.Japones;

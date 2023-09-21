@@ -1,7 +1,7 @@
 package adapter;
 
-import target.Brasil;
-import target.Japao;
+import targetAdapter.Brasil;
+import targetAdapter.Japao;
 
 public class JaponesAdapter implements Brasil {
     

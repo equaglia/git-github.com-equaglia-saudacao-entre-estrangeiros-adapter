@@ -1,7 +1,7 @@
 package adapter;
 
-import target.Brasil;
-import target.EstadosUnidos;
+import targetAdapter.Brasil;
+import targetAdapter.EstadosUnidos;
 
 public class AmericanoAdapter implements Brasil {
 

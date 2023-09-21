@@ -1,6 +1,6 @@
 package adaptee;
 
-import target.EstadosUnidos;
+import targetAdapter.EstadosUnidos;
 
 public class Americano implements EstadosUnidos{
 

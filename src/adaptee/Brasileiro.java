@@ -1,6 +1,6 @@
 package adaptee;
 
-import target.Brasil;
+import targetAdapter.Brasil;
 
 public class Brasileiro implements Brasil{
 

@@ -1,6 +1,6 @@
 package adaptee;
 
-import target.Japao;
+import targetAdapter.Japao;
 
 public class Japones implements Japao{
 
