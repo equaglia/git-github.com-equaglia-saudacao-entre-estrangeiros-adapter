@@ -1,13 +1,18 @@
 package adapter;
 
-import targetAdapter.Brasil;
-import targetAdapter.Japao;
+import adaptee.Japao;
+import target.Estrangeiro;
 
-public class JaponesAdapter implements Brasil {
+/**
+ * Adapter de japones para estrangeiros
+ * 
+ * @author equaglia
+ */
+public class JapaoAdapter implements Estrangeiro {
     
     Japao japones;
 
-    public JaponesAdapter(Japao japones) {
+    public JapaoAdapter(Japao japones) {
         this.japones = japones;
     }
 
@@ -17,7 +22,8 @@ public class JaponesAdapter implements Brasil {
     }
 
     @Override
-    public void abracar(String nomeDeQuemRecebeComprimento) {
+    public void agir(String nomeDeQuemRecebeComprimento) {
+        /* metodo reverenciar() do japones substitue o metodo agir() do estrangeiro */
         japones.reverenciar(nomeDeQuemRecebeComprimento);
     }
 

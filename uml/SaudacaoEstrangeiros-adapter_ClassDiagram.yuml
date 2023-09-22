@@ -1,0 +1,35 @@
+// https://yuml.me/diagram/scruffy/class/draw
+// gerador de diagrama de classes YUML
+
+// SaudacaoEstrangeiros-adapter Class Diagram
+// -------------------
+//
+
+[<<Interface>>;Estrangeiro| |+getNome();+falar(nomeDeQuemRecebeCumprimento);+agir(nomeDeQuemRecebeCumprimento)]
+
+[BrasilAdapter|brasileiro: Brasil | construtor(brasileiro)]
+[EstadosUnidosAdapter| americano : EstadosUnidos|construtor(americano) ]
+[JapaoAdapter| japones: Japao | construtor(japones)]
+
+[<<Interface>>;Brasil| |+getNome();+falar(nomeDeQuemRecebeCumprimento);+abracar(nomeDeQuemRecebeCumprimento)]
+[<<Interface>>;EstadosUnidos| |+getNome();+falar(nomeDeQuemRecebeCumprimento);+acenar(nomeDeQuemRecebeCumprimento)]
+[<<Interface>>;Japao| |+getNome();+falar(nomeDeQuemRecebeCumprimento);+reverenciar(nomeDeQuemRecebeCumprimento)]
+
+[Brasileiro|nome|construtor(nome)]
+[Americano|nome|construtor(nome)]
+[Japones|nome|construtor(nome)]
+
+[SaudacaoEntreEstrangeiros]-target>[Estrangeiro]
+
+[Estrangeiro]^-.-[BrasilAdapter]
+[Estrangeiro]^-.-[EstadosUnidosAdapter]
+[Estrangeiro]^-.-[JapaoAdapter]
+
+
+[BrasilAdapter]-adaptee>[Brasileiro]
+[EstadosUnidosAdapter]-adaptee>[Americano]
+[JapaoAdapter]-adaptee>[Japones]
+
+[Brasil]^-.-[Brasileiro]
+[EstadosUnidos]^-.-[Americano]
+[Japao]^-.-[Japones]

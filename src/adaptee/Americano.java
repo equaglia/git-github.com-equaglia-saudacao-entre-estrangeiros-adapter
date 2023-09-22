@@ -1,7 +1,9 @@
 package adaptee;
 
-import targetAdapter.EstadosUnidos;
-
+/**
+ * Implementação do adaptee americano no padrão de design Adapter
+ * @author equaglia
+ */
 public class Americano implements EstadosUnidos{
 
     String nome;
@@ -12,7 +14,7 @@ public class Americano implements EstadosUnidos{
 
     @Override
     public void falar(String nomeDeQuemRecebeComprimento) {
-        System.out.print(" \"Hello " + nomeDeQuemRecebeComprimento+"\"");
+        System.out.print(" \"Hello, " + nomeDeQuemRecebeComprimento+"!\"");
     }
 
     @Override
